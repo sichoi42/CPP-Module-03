@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 15:09:21 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/20 18:58:58 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/22 16:15:36 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ class ClapTrap
 		unsigned int	getHitPoints(void) const;
 		unsigned int	getEnergyPoints(void) const;
 		unsigned int	getAttackDamage(void) const;
-		void			setName(void);
+		void			setName(std::string name);
 		void			setHitPoints(unsigned int hit_points);
 		void			setEnergyPoints(unsigned int energy_points);
 		void			setAttackDamage(unsigned int attack_damage);

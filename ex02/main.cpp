@@ -6,16 +6,17 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 17:56:48 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/22 17:03:54 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/22 17:17:53 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int	main(void)
 {
 	ScavTrap a("a");
-	ScavTrap b("b");
+	FragTrap b("b");
 	a.print();
 	b.print();
 	a.attack("b");
@@ -24,6 +25,7 @@ int	main(void)
 	b.print();
 	b.beRepaired(b.getAttackDamage());
 	b.print();
-	b.guardGate();
+	a.guardGate();
+	b.highFivesGuys();
 	return (0);
 }

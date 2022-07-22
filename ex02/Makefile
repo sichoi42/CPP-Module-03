@@ -6,11 +6,11 @@
 #    By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/21 18:35:07 by sichoi            #+#    #+#              #
-#    Updated: 2022/07/22 16:44:05 by sichoi           ###   ########.fr        #
+#    Updated: 2022/07/22 17:20:45 by sichoi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = scavtrap
+NAME = fragtrap
 
 CC = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -23,6 +23,7 @@ CHECK = \033[0;32m\xE2\x9C\x94\033[0m
 FUNC = main\
 		ClapTrap\
 		ScavTrap\
+		FragTrap\
 
 SRC = $(addsuffix .cpp, $(FUNC))
 OBJ = $(addsuffix .o, $(FUNC))

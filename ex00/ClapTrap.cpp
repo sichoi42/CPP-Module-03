@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 15:09:18 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/20 19:06:48 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/22 16:18:36 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ void	ClapTrap::takeDamage(unsigned int amount)
 		_hit_points = 0;
 	else
 		_hit_points -= amount;
-	std::cout << "ClapTrap " << _name << "take " << amount << " damage!!" << std::endl;
+	std::cout << "ClapTrap " << _name << " take " << amount << " damage!!" << std::endl;
 }
 
 void	ClapTrap::beRepaired(unsigned int amount)
@@ -93,8 +93,13 @@ void	ClapTrap::beRepaired(unsigned int amount)
 		_hit_points += amount;
 		if (_hit_points > 10)
 			_hit_points = 10;
-		std::cout << "ClapTrap " << _name << " repair itself, getting " << amount << "hit points back!!" << std::endl;
+		std::cout << "ClapTrap " << _name << " repair itself, getting " << amount << " hit points back!!" << std::endl;
 	}
+}
+
+std::string	ClapTrap::getName(void) const
+{
+	return ( _name);
 }
 
 unsigned int	ClapTrap::getHitPoints(void) const
@@ -110,6 +115,11 @@ unsigned int	ClapTrap::getEnergyPoints(void) const
 unsigned int	ClapTrap::getAttackDamage(void) const
 {
 	return (_attack_damage);
+}
+
+void	ClapTrap::setName(std::string name)
+{
+	_name = name;
 }
 
 void	ClapTrap::setHitPoints(unsigned int hit_points)
