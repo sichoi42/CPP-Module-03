@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/22 17:08:44 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/22 17:22:20 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/23 14:52:18 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name)
 	_hit_points = 100;
 	_energy_points = 100;
 	_attack_damage = 30;
-	std::cout << "FraTrap " << name << " has created!" << std::endl;
+	std::cout << "FragTrap " << name << " has created!" << std::endl;
 }
 
 FragTrap::~FragTrap()

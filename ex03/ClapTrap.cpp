@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 15:09:18 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/22 16:18:33 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/23 15:22:59 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _hit_points(10), _energy_points(10), _attack_damage(0)
 {
-	std::cout << "ClapTrap " << name << " has created!" << std::endl;
+	std::cout << "ClapTrap " << _name << " has created!" << std::endl;
 }
 
 ClapTrap::~ClapTrap()
